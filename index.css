@@ -224,6 +224,9 @@ p{
 }
 
 .contact h2 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     color: black;
     margin-bottom: 20px;
     font-size: 24px;
@@ -241,6 +244,7 @@ p{
     font-size: 16px;
     display: block;
     font-family: Arial, sans-serif;
+    border-radius: 10px;
 }
 
 .contact textarea {
@@ -254,6 +258,7 @@ p{
     color: white;
     border: 1px solid black;
     cursor: pointer;
+    border-radius: 50px;
     font-size: 16px;
 }
 
@@ -261,163 +266,285 @@ p{
     background-color: #333;
 }
 
-
-/* RESPONSIVE UNTUK MOBILE */
-@media (max-width: 768px) {
-    /* Navbar */
-    .nav-container {
-        padding: 0 1rem;
-    }
-
-    .logo {
-        font-size: 18px;
-    }
-
-    .nav-menu {
-        gap: 1rem;
-    }
-
-    .nav-menu a {
-        font-size: 0.85rem;
-    }
-
-    /* Hero */
-    .hero img{
-        margin-top: 30%;
-        width: 50%;
-        height: auto;
-    }
-
-    .hero h1{
-        font-size: 22px;
-        padding: 0 20px;
-    }
-
-    .hero p{
-        font-size: 15px;
-        padding: 0 20px;
-    }
-
-    /* About */
-    .about {
-        margin-top: 50%;
-    }
-
-    .about h2{
-        font-size: 24px;
-        padding: 0 20px;
-    }
-
-    .about img{
-        position: static;
-        margin: 20px auto;
-        width: 60%;
-        display: block;
-    }
-
-    .about p{
-        text-align: center;
-        margin: 20px auto;
-        padding: 0 20px;
-        width: 90%;
-    }
-
-    /* Project */
-    .project {
-        margin: 10% 20px;
-    }
-
-    .project h1{
-        margin-top: 50%;
-        margin-bottom: 50px;
-        font-size: 24px;
-    }
-
-    .project1, .project2, .project3 {
-        padding: 20px;
-        margin-top: 30px;
-    }
-
-    .project1 img, .project2 img, .project3 img {
-        position: static;
-        margin: 0 auto 20px;
-        width: 40%;
-        display: block;
-    }
-
-    .project1 h1, .project2 h1, .project3 h1 {
-        margin: 10px 0;
-        font-size: 20px;
-        text-align: center;
-    }
-
-    .project1 p, .project2 p, .project3 p {
-        margin: 10px 0;
-        text-align: center;
-        font-size: 14px;
-    }
-
-    /* Contact */
-    .contact {
-        padding: 30px 20px;
-    }
-
-    .contact h2 {
-        font-size: 20px;
-    }
-
-    .contact input,
-    .contact textarea {
-        max-width: 100%;
-        font-size: 14px;
-    }
-
-    .contact button {
-        width: 100%;
-        max-width: 400px;
-    }
+.footer {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: black;
+    color: white;
+    padding: 50px 20px 20px;
+    text-align: left;
 }
 
-/* RESPONSIVE UNTUK MOBILE KECIL */
-@media (max-width: 480px) {
-    .logo {
-        font-size: 16px;
-    }
-
-    .nav-menu {
-        gap: 0.5rem;
-    }
-
-    .nav-menu a {
-        font-size: 0.75rem;
-    }
-
-    .hero img {
-        width: 60%;
-        margin-top: 35%;
-    }
-
-    .hero h1 {
-        font-size: 18px;
-    }
-
-    .hero p {
-        font-size: 13px;
-    }
-
-    .about img {
-        width: 70%;
-    }
-
-    .project1 img, .project2 img, .project3 img {
-        width: 50%;
-    }
-
-    .project h1 {
-        font-size: 20px;
-    }
-
-    .project1 h1, .project2 h1, .project3 h1 {
-        font-size: 18px;
-    }
+.footer-section {
+    margin-bottom: 30px;
 }
+
+.footer h3 {
+    color: white;
+    margin-bottom: 15px;
+    font-size: 20px;
+    text-align: left;
+}
+
+.footer p {
+    color: #ccc;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #888;
+}
+
+.social-media {
+    margin: 20px 0;
+    text-align: left;
+}
+
+.social-media a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background-color: white;
+    color: black;
+    margin: 0 10px 0 0;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.social-media a:hover {
+    background-color: #888;
+    color: white;
+    transform: translateY(-3px);
+}
+
+.footer-bottom {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #333;
+    color: #888;
+    font-size: 14px;
+    text-align: left;
+}
+        /* Responsive untuk Mobile */
+        @media (max-width: 768px) {
+            .footer {
+                padding: 30px 15px 15px;
+            }
+
+            .footer h3 {
+                font-size: 18px;
+                margin-bottom: 12px;
+            }
+
+            .footer p {
+                font-size: 14px;
+                padding: 0 10px;
+            }
+
+            .footer-section {
+                margin-bottom: 25px;
+            }
+
+            .footer-links li {
+                margin-bottom: 8px;
+            }
+
+            .footer-links a {
+                font-size: 14px;
+            }
+
+            .social-media a {
+                width: 35px;
+                height: 35px;
+                line-height: 35px;
+                margin: 0 8px;
+                font-size: 14px;
+            }
+
+            .footer-bottom {
+                margin-top: 20px;
+                padding-top: 15px;
+                font-size: 12px;
+                padding: 15px 10px 0;
+            }
+
+            .footer-bottom p {
+                font-size: 12px;
+            }
+
+            .nav-container {
+                padding: 0 1rem;
+            }
+
+            .logo {
+                font-size: 18px;
+            }
+
+            .nav-menu {
+                gap: 1rem;
+            }
+
+            .nav-menu a {
+                font-size: 0.85rem;
+            }
+
+            /* Hero */
+            .hero img{
+                margin-top: 30%;
+                width: 50%;
+                height: auto;
+            }
+
+            .hero h1{
+                font-size: 22px;
+                padding: 0 20px;
+            }
+
+            .hero p{
+                font-size: 15px;
+                padding: 0 20px;
+            }
+
+            /* About */
+            .about {
+                margin-top: 50%;
+            }
+
+            .about h2{
+                font-size: 24px;
+                padding: 0 20px;
+            }
+
+            .about img{
+                position: static;
+                margin: 20px auto;
+                width: 60%;
+                display: block;
+            }
+
+            .about p{
+                text-align: center;
+                margin: 20px auto;
+                padding: 0 20px;
+                width: 90%;
+            }
+
+            /* Project */
+            .project {
+                margin: 10% 20px;
+            }
+
+            .project h1{
+                margin-top: 50%;
+                margin-bottom: 50px;
+                font-size: 24px;
+            }
+
+            .project1, .project2, .project3 {
+                padding: 20px;
+                margin-top: 30px;
+            }
+
+            .project1 img, .project2 img, .project3 img {
+                position: static;
+                margin: 0 auto 20px;
+                width: 40%;
+                display: block;
+            }
+
+            .project1 h1, .project2 h1, .project3 h1 {
+                margin: 10px 0;
+                font-size: 20px;
+                text-align: center;
+            }
+
+            .project1 p, .project2 p, .project3 p {
+                margin: 10px 0;
+                text-align: center;
+                font-size: 14px;
+            }
+
+            /* Contact */
+            .contact {
+                padding: 30px 20px;
+            }
+
+            .contact h2 {
+                font-size: 20px;
+            }
+
+            .contact input,
+            .contact textarea {
+                max-width: 100%;
+                font-size: 14px;
+            }
+
+            .contact button {
+                width: 100%;
+                max-width: 400px;
+            }
+        
+            .logo {
+                font-size: 16px;
+            }
+
+            .nav-menu {
+                gap: 0.5rem;
+            }
+
+            .nav-menu a {
+                font-size: 0.75rem;
+            }
+
+            .hero img {
+                width: 60%;
+                margin-top: 35%;
+            }
+
+            .hero h1 {
+                font-size: 18px;
+            }
+
+            .hero p {
+                font-size: 13px;
+            }
+
+            .about img {
+                width: 70%;
+            }
+
+            .project1 img, .project2 img, .project3 img {
+                width: 50%;
+            }
+
+            .project h1 {
+                font-size: 20px;
+            }
+
+            .project1 h1, .project2 h1, .project3 h1 {
+                font-size: 18px;
+            }
+        }
