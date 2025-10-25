@@ -102,7 +102,7 @@
       </ul>
     </div>
 
-    <div class="footer-section" data-aos="fade-left" data-aos-duration="2       000">
+    <div class="footer-section" data-aos="fade-left" data-aos-duration="2000">
       <h3>Ikuti Kami</h3>
       <div class="social-media">
         <a href="#" title="Instagram">
@@ -123,14 +123,46 @@
   </div>
 </footer>
 
-<!-- AOS JS -->
 <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 <script>
   AOS.init({
     duration: 800,
     once: true
   });
+
+  const navLinks = document.querySelectorAll('.nav-menu a');
+
+  navLinks.forEach(link => {
+    link.addEventListener('click', e => {
+      e.preventDefault(); 
+      const targetId = link.getAttribute('href');
+      const targetSection = document.querySelector(targetId);
+
+      targetSection.scrollIntoView({
+        behavior: 'smooth'
+      });
+
+      navLinks.forEach(l => l.classList.remove('active'));
+      link.classList.add('active');
+    });
+  });
+
+  window.addEventListener('scroll', () => {
+    let fromTop = window.scrollY + 80; 
+
+    navLinks.forEach(link => {
+      const section = document.querySelector(link.getAttribute('href'));
+      if (
+        section.offsetTop <= fromTop &&
+        section.offsetTop + section.offsetHeight > fromTop
+      ) {
+        navLinks.forEach(l => l.classList.remove('active'));
+        link.classList.add('active');
+      }
+    });
+  });
 </script>
+
 
 </body>
 </html>
