@@ -39,7 +39,7 @@ Desain akhir gua mengarah ke tampilan yang **simple**, **elegan**, dan **human-f
 di mana setiap bagian dibuat agar langsung menggambarkan karakter gua sebagai developer.  
 
 <p align="center">
-  <img src="https://github.com/synvera/MyPorto.github.io/blob/main/src/screencapture-synvera-github-io-MyPorto-github-io-2025-10-25-14_32_45.png" width="420" alt="Portfolio Screenshot"/>
+  <img src="https://github.com/synvera/MyPorto.github.io/blob/main/src/screencapture-synvera-github-io-MyPorto-github-io-2025-10-25-16_07_57.png" width="420" alt="Portfolio Screenshot"/>
 </p>
 
 <p align="center">
