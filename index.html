@@ -1,111 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio</title>
-    <link rel="icon" type="jpg" href="src/Logo synvera.jpg">
-    <link rel="stylesheet" href="index.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofolio</title>
+  <link rel="icon" type="jpg" href="src/Logo synvera.jpg">
+  <link rel="stylesheet" href="index.css">
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
 </head>
 <body>
-<nav>
-    <div class="nav-container">
-        <a href="#" class="logo">SYNVERA</a>  
-        <ul class="nav-menu" id="navMenu">
-            <li><a href="#hero">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#project">Project</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </div>
-</nav>
-<div id="home" class="hero"> 
-    <img src="src/Logo synvera.jpg" alt="logo">
-    <div class="isiHero">
-        <h1>Mochammad Khahfi</h1>
-        <p>
-            seorang programmer dan web developer yang suka <br>
-            membangun tampilan interaktif dan efisien.
-        </p>
-    </div>
-</div>
-<div id="about" class="about">
-    <h2>About</h2>
-    <img src="src/WhatsApp Image 2025-10-24 at 14.20.11_c20b0e1d.jpg" alt="">
-    <p>Nama: Mochammad Khahfi <br>
-        <br>
-    Kelas: XI RPL <br>
-    <br>
-    Tanggal Lahir: 25 Januari 2009 <br>
-    <br>
-    Alamat: Ciputat, Tangerang Selatan <br>
-    <br>
-Sekolah: SMK Muhammadiyah 3 Ciputat, Tangsel</p>
-</div>
-<div id="projek" class="project">
-    <h1>Project</h1>
-    <div class="project1">
-        <img src="src/OIP.jpeg" alt="Robot_Sumo">
-        <h1>Robot Sumo</h1>
-        <p>Robot Sumo adalah robot otonom yang dirancang untuk bertarung di arena dengan <br> tujuan mendorong lawan keluar dari lingkaran. Dilengkapi dengan sensor jarak dan <br> motor berkecepatan tinggi, robot ini mampu mendeteksi dan menyerang lawan secara strategis.</p>
-    </div>
-    <div class="project2">
-        <img src="src/OIP.webp" alt="Iot Absensi">
-        <h1>IoT Absensi</h1>
-        <p>IoT Absensi adalah sistem absensi berbasis Internet of Things yang memungkinkan pencatatan <br> kehadiran secara otomatis menggunakan sensor atau kartu RFID. <br> Data kehadiran tersimpan langsung di server online dan dapat dipantau secara real-time melalui dashboard.</p>
-    </div>
-    <div class="project3">
-        <img src="src/OIP (1).webp" alt="profile company">
-        <h1>Web Profile Company</h1>
-        <p>Landing Page adalah halaman web utama yang dirancang untuk menampilkan informasi singkat <br> tentang produk atau layanan secara menarik. <br> Menggunakan desain responsif dan elemen visual yang modern, <br> halaman ini bertujuan untuk meningkatkan minat dan konversi pengunjung.</p>
-    </div>
-</div>
-<div id="contact" class="contact">
-    <h2>Form Kontak</h2>
-    
-    <form id="contactForm">
-        <input type="text" id="nama" placeholder="Nama" required>
-        
-        <input type="email" id="email" placeholder="Email" required>
-        
-        <textarea id="pesan" placeholder="Pesan" required></textarea>
-        
-        <button type="submit">Kirim</button>
-    </form>
-</div>
-<footer class="footer">
-        <div class="footer-content">
-            
-            <div class="footer-section">
-                <h3>Menu</h3>
-                <ul class="footer-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projek">Project</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-            
-           <div class="footer-section">
-                <h3>Ikuti Kami</h3>
-                <div class="social-media">
-                    <a href="#" title="Instagram">
-                    <img src="src/instagram-brands-solid-full.svg" alt="Instagram" class="sosmed-icon">
-                    </a>
-                    <a href="#" title="Twitter">
-                    <img src="src/twitter-brands-solid-full.svg" alt="Twitter" class="sosmed-icon">
-                    </a>
-                    <a href="#" title="LinkedIn">
-                    <img src="src/linkedin-brands-solid-full.svg" alt="LinkedIn" class="sosmed-icon">
-                    </a>
-                </div>
-            </div>
 
-            <div class="footer-bottom">
-                <p>&copy; 2025 synvera. All Rights Reserved.</p>
-            </div>
-            
-        </div>
-    </footer>
+<nav data-aos="fade-down">
+  <div class="nav-container">
+    <a href="#" class="logo">SYNVERA</a>  
+    <ul class="nav-menu" id="navMenu">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#project">Project</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div id="home" class="hero" data-aos="fade-up">
+  <img src="src/Logo synvera.jpg" alt="logo" data-aos="zoom-in" />
+  <div class="isiHero" data-aos="fade-up" data-aos-delay="200">
+    <h1>Mochammad Khahfi</h1>
+    <p>
+      seorang programmer dan web developer yang suka <br>
+      membangun tampilan interaktif dan efisien.
+    </p>
+  </div>
+</div>
+
+<div id="about" class="about" data-aos="fade-up">
+  <h2 data-aos="fade-right">About</h2>
+  <img src="src/WhatsApp Image 2025-10-24 at 14.20.11_c20b0e1d.jpg" alt="" data-aos="zoom-in" />
+  <p data-aos="fade-up" data-aos-delay="100">
+    Saya seorang pelajar SMK yang berfokus pada pengembangan aplikasi web dan IoT. <br>
+    Saya percaya bahwa teknologi adalah cara terbaik untuk membantu orang lain. <br>
+    Saat ini saya aktif mengerjakan proyek pribadi dan berkolaborasi dengan tim <br>
+    kecil untuk mengasah kemampuan teknis dan komunikasi.
+  </p>
+</div>
+
+<div id="projek" class="project" data-aos="fade-up">
+  <h1 data-aos="fade-right">Project</h1>
+
+  <div class="project1" data-aos="zoom-in">
+    <img src="src/OIP.jpeg" alt="Robot_Sumo" />
+    <h1>Robot Sumo</h1>
+    <p>
+      Robot Sumo adalah robot otonom yang dirancang untuk bertarung di arena dengan <br>
+      tujuan mendorong lawan keluar dari lingkaran. Dilengkapi dengan sensor jarak dan <br>
+      motor berkecepatan tinggi, robot ini mampu mendeteksi dan menyerang lawan secara strategis.
+    </p>
+  </div>
+
+  <div class="project2" data-aos="zoom-in" data-aos-delay="100">
+    <img src="src/OIP.webp" alt="Iot Absensi" />
+    <h1>IoT Absensi</h1>
+    <p>
+      IoT Absensi adalah sistem absensi berbasis Internet of Things yang memungkinkan pencatatan <br>
+      kehadiran secara otomatis menggunakan sensor atau kartu RFID. <br>
+      Data kehadiran tersimpan langsung di server online dan dapat dipantau secara real-time melalui dashboard.
+    </p>
+  </div>
+
+  <div class="project3" data-aos="zoom-in" data-aos-delay="200">
+    <img src="src/OIP (1).webp" alt="profile company" />
+    <h1>Web Profile Company</h1>
+    <p>
+      Landing Page adalah halaman web utama yang dirancang untuk menampilkan informasi singkat <br>
+      tentang produk atau layanan secara menarik. <br>
+      Menggunakan desain responsif dan elemen visual yang modern, <br>
+      halaman ini bertujuan untuk meningkatkan minat dan konversi pengunjung.
+    </p>
+  </div>
+</div>
+
+<div id="contact" class="contact" data-aos="fade-up">
+  <h2 data-aos="fade-right">Form Kontak</h2>
+  <form id="contactForm" data-aos="fade-up" data-aos-delay="100">
+    <input type="text" id="nama" placeholder="Nama" required>
+    <input type="email" id="email" placeholder="Email" required>
+    <textarea id="pesan" placeholder="Pesan" required></textarea>
+    <button type="submit">Kirim</button>
+  </form>
+</div>
+
+<footer class="footer" data-aos="fade-up">
+  <div class="footer-content">
+    <div class="footer-section" data-aos="fade-right">
+      <h3>Menu</h3>
+      <ul class="footer-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projek">Project</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section" data-aos="fade-left">
+      <h3>Ikuti Kami</h3>
+      <div class="social-media">
+        <a href="#" title="Instagram">
+          <img src="src/instagram-brands-solid-full.svg" alt="Instagram" class="sosmed-icon">
+        </a>
+        <a href="#" title="Twitter">
+          <img src="src/twitter-brands-solid-full.svg" alt="Twitter" class="sosmed-icon">
+        </a>
+        <a href="#" title="LinkedIn">
+          <img src="src/linkedin-brands-solid-full.svg" alt="LinkedIn" class="sosmed-icon">
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom" data-aos="fade-up" data-aos-delay="100">
+    <p>&copy; 2025 synvera. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<!-- AOS JS -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 800,
+    once: true
+  });
+</script>
+
 </body>
 </html>
