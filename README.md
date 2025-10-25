@@ -1,7 +1,16 @@
-### Portofolio
+>### Portofolio Kahfi
+Dengan mengambil tema Monochrome Theme, mengapa begitu?? <br> Karena simple
 
-Pak😊😊😊😊..........
+<br>
+Pallet warna yang saya gunakan iya lah
+<br>
+Color: #000000 atau bisa dibilang hitam <br>
+Color: #ffffffff atau bisa dibilang ptuih
 
-readme.md saya minta keringanan ya pak, jam 9 malam saya pastikan sudah ada pak
+<br>
 
-terima kasih bapaaa ❤️❤️❤️❤️
+<br>
+Saya mengambil sebuah ide dari pinterest, dengan sebuah bentuk web yang simpel dan elegant
+
+dengan bentuk refrensi seperti ini <br>
+<img src=>
