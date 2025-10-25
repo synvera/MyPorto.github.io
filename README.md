@@ -13,4 +13,4 @@ Color: #ffffffff atau bisa dibilang ptuih
 Saya mengambil sebuah ide dari pinterest, dengan sebuah bentuk web yang simpel dan elegant
 
 dengan bentuk refrensi seperti ini <br>
-<img src=>
+<img src="https://github.com/synvera/MyPorto.github.io/blob/main/src/screencapture-synvera-github-io-MyPorto-github-io-2025-10-25-14_32_45.png" width=300 />
