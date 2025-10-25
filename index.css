@@ -273,36 +273,48 @@ p{
     background-color: black;
     color: white;
     padding: 50px 20px 20px;
-    text-align: left;
 }
 
+/* Susunan isi footer jadi fleksibel */
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Setiap bagian footer */
 .footer-section {
     margin-bottom: 30px;
 }
 
+/* Judul di tengah */
 .footer h3 {
     color: white;
     margin-bottom: 15px;
     font-size: 20px;
-    text-align: left;
+    text-align: center;
 }
 
+/* Paragraf di tengah */
 .footer p {
     color: #ccc;
     line-height: 1.6;
     margin-bottom: 10px;
-    text-align: left;
+    text-align: center;
 }
 
+/* ======== MENU RATANYA DI TENGAH ======== */
 .footer-links {
     list-style: none;
     padding: 0;
     margin: 0;
-    text-align: left;
+    text-align: center;
 }
 
 .footer-links li {
-    margin-bottom: 10px;
+    display: inline-block;
+    margin: 0 10px;
 }
 
 .footer-links a {
@@ -315,16 +327,18 @@ p{
     color: #888;
 }
 
+/* ======== SOSIAL MEDIA ======== */
 .social-media {
     margin: 20px 0;
-    text-align: left;
+    text-align: center;
 }
 
 .social-media a {
-    display: inline-block;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
     width: 40px;
     height: 40px;
-    line-height: 40px;
     background-color: white;
     color: black;
     margin: 0 10px 0 0;
@@ -340,6 +354,18 @@ p{
     transform: translateY(-3px);
 }
 
+.social-media img {
+    width: 20px;
+    height: 20px;
+    filter: invert(0%);
+    transition: filter 0.3s ease;
+}
+
+.social-media a:hover img {
+    filter: invert(100%);
+}
+
+/* ======== BAGIAN BAWAH (COPYRIGHT) ======== */
 .footer-bottom {
     margin-top: 30px;
     padding-top: 20px;
@@ -348,6 +374,7 @@ p{
     font-size: 14px;
     text-align: center;
 }
+
         /* Responsive untuk Mobile */
         @media (max-width: 768px) {
             .footer {
